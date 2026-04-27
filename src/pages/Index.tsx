@@ -4,7 +4,7 @@
 const Index = () => {
   return (
     <iframe
-      src="/static-site/index.html"
+      src={`/static-site/index.html?v=${Date.now()}`}
       title="Safewell Security Services"
       style={{
         position: "fixed",
