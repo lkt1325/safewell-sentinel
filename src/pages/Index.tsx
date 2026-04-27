@@ -1,16 +1,20 @@
-// Update this page (the content is just a fallback if you fail to update the page)
-
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+// Renders the static Safewell site (in /public/static-site) inside the Lovable preview.
+// The full static project also lives at /static-site/ in the repo for direct deploy
+// to Vercel / Netlify / GitHub Pages.
+const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
-    </div>
+    <iframe
+      src="/static-site/index.html"
+      title="Safewell Security Services"
+      style={{
+        position: "fixed",
+        inset: 0,
+        width: "100vw",
+        height: "100vh",
+        border: "none",
+      }}
+    />
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
